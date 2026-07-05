@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f1efe8;
+  color: #2c2c2a;
+  margin: 0;
+  padding: 24px 16px;
+}
+
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  color: #5f5e5a;
+  margin: 16px 0 6px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #d3d1c7;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.level-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.level-btn {
+  padding: 10px 4px;
+  border: 1px solid #d3d1c7;
+  border-radius: 8px;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.level-btn.active {
+  border: 2px solid #185fa5;
+  background: #e6f1fb;
+  color: #0c447c;
+  font-weight: 600;
+}
+
+.primary-btn {
+  width: 100%;
+  height: 44px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2c2c2a;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn:active {
+  transform: scale(0.98);
+}
+
+.error-text {
+  color: #a32d2d;
+  font-size: 13px;
+  min-height: 18px;
+  margin: 8px 0 0;
+}
+
+.leaderboard-section {
+  margin-top: 24px;
+  border-top: 1px solid #d3d1c7;
+  padding-top: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+thead td {
+  color: #5f5e5a;
+  padding: 4px 0;
+}
+
+tbody tr {
+  border-top: 1px solid #d3d1c7;
+}
+
+tbody td {
+  padding: 6px 0;
+}
+
+tbody td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 13px;
+  color: #5f5e5a;
+  margin: 0;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 4px 0 0;
+}
+
+.value.big {
+  font-size: 40px;
+  text-align: center;
+}
+
+#final-score, #final-info {
+  text-align: center;
+}
+
+.mole-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.mole-hole {
+  aspect-ratio: 1;
+  background: #e9e7df;
+  border: 1px solid #d3d1c7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.mole-hole.active {
+  background: #fac775;
+}
